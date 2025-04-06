@@ -29,6 +29,8 @@ body {
     min-width: 339px;
     min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .trans-bg img[alt="Company Logo"] {
@@ -54,10 +56,11 @@ body {
 }
 
 p.credit {
-    position: absolute;
-    top: 90vh;
     color: white;
-    left: 10px;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 0px;
+    align-self: center;
 }
 
 p a:link {
@@ -75,26 +78,49 @@ p a:visited {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 50px 0px 50px;
 }
 
-.inmain + .inmain {
-    margin-top: 30px;
+.inmain:not(.form) {
+    margin-left: 30px;
 }
 
-.main > .maintext :first-child {
+.main > .maintext :not(:last-child) {
     font-weight: bold;
 }
 
-h2 {
+/* form stuff */
 
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    background: white;
+    box-shadow: 0px 6px 8px 0px rgba(184, 184, 184, 0.84);
+}
+
+h2 {
+    margin-left: 30px;
 }
 
 li {
     list-style-type: none;
 }
 
-.form {
-    background: white;
-    box-shadow: 0px 8px 10px 0px rgba(126, 126, 126, 0.84);
+button[type="submit"] {
+    padding: 10px 30px 10px;
+    background-color:#596D48;
+    color: white;
+    border: 2px solid #596D48;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.main p a:link, .main p a:visited {
+    color: black;
+    font-weight: bold;
 }
