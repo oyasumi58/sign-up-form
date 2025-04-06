@@ -88,7 +88,7 @@ p a:visited {
     width: 50ch;
 }
 
-.main > .maintext :not(:last-child) {
+.main > .maintext {
     font-weight: bold;
 }
 
@@ -100,6 +100,7 @@ p a:visited {
     flex-direction: column;
     background: white;
     box-shadow: 0px 6px 8px 0px rgba(184, 184, 184, 0.84);
+    margin-top: 30px;
 }
 
 h2 {
@@ -107,12 +108,17 @@ h2 {
     color: rgb(83, 83, 83);
 }
 
+ul {
+    padding: 0px;
+}
+
 li {
     list-style-type: none;
     display: flex;
     color: rgb(83, 83, 83);
     font-size: 0.8rem;
-    /* margin-left: 30px; */
+    margin-left: 30px;
+    /* border: 1px solid red; */
 }
 
 li + li {
@@ -162,4 +168,10 @@ button[type="submit"] {
 .main p a:link, .main p a:visited {
     color: rgb(0, 83, 35);
     font-weight: bold;
+}
+
+.passinfo{
+    font-size: 0.65rem;
+    margin-top: 5px;
+    font-weight: lighter;
 }
