@@ -9,13 +9,14 @@
 }
 
 body {
-    font-family: monospace, Courier, sans-serif;
+    font-family: Helvetica ,monospace, Courier, sans-serif;
     margin: 0px;
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 
@@ -24,9 +25,9 @@ body {
     /* background-color: green; */
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 339px;
     max-width: 339px;
     max-height: 100vh;
-    min-width: 339px;
     min-height: 100vh;
     position: relative;
     display: flex;
@@ -40,7 +41,7 @@ body {
 
 .trans-bg {
     background-color: rgba(0,0,0,0.7);
-    width: 339px;
+    width: 100%;
     position: relative;
     top: 30%; 
     left: 0;
@@ -84,6 +85,7 @@ p a:visited {
 
 .inmain:not(.form) {
     margin-left: 30px;
+    width: 50ch;
 }
 
 .main > .maintext :not(:last-child) {
@@ -96,17 +98,54 @@ p a:visited {
 .form {
     display: flex;
     flex-direction: column;
-
     background: white;
     box-shadow: 0px 6px 8px 0px rgba(184, 184, 184, 0.84);
 }
 
 h2 {
     margin-left: 30px;
+    color: rgb(83, 83, 83);
 }
 
 li {
     list-style-type: none;
+    display: flex;
+    color: rgb(83, 83, 83);
+    font-size: 0.8rem;
+    /* margin-left: 30px; */
+}
+
+li + li {
+    margin-top: 20px;
+}
+
+div.input {
+
+    width: 240px;
+    padding-right: 0px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:hover {
+    background: rgb(242, 252, 246);
+}
+
+
+
+div.input > input:user-invalid{
+    outline: 1px dotted red;
+    background: rgb(255, 210, 210);
+}
+
+
+input:focus {
+    background: rgb(255, 255, 255);
+    outline: 1px solid blue;
+    box-shadow: 0px 6px 8px 0px rgba(184, 184, 184, 0.84);;
 }
 
 button[type="submit"] {
@@ -121,6 +160,6 @@ button[type="submit"] {
 }
 
 .main p a:link, .main p a:visited {
-    color: black;
+    color: rgb(0, 83, 35);
     font-weight: bold;
 }
