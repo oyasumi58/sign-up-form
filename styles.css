@@ -9,5 +9,92 @@
 }
 
 body {
+    font-family: monospace, Courier, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.side {
+    background-image: url("lexi-laginess-nt6N7BS3rPk-unsplash.jpg");
+    /* background-color: green; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 339px;
+    max-height: 100vh;
+    min-width: 339px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.trans-bg img[alt="Company Logo"] {
+    width: 80px;
+    color: white;
+}
+
+.trans-bg {
+    background-color: rgba(0,0,0,0.7);
+    width: 339px;
+    position: relative;
+    top: 30%; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px;
+}
+
+.trans-bg > span.logotext {
+    color: white;
     font-family: 'Norse';
+    font-size: 6rem;
+}
+
+p.credit {
+    position: absolute;
+    top: 90vh;
+    color: white;
+    left: 10px;
+}
+
+p a:link {
+    color: white;
+}
+
+p a:visited {
+    color: white;
+}
+
+
+/* right side area styles */
+.main {
+    background-color: rgb(246, 246, 248);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inmain + .inmain {
+    margin-top: 30px;
+}
+
+.main > .maintext :first-child {
+    font-weight: bold;
+}
+
+h2 {
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.form {
+    background: white;
+    box-shadow: 0px 8px 10px 0px rgba(126, 126, 126, 0.84);
 }
