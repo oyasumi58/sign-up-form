@@ -15,7 +15,7 @@ body {
     border: 0px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     overflow: hidden;
 }
 
@@ -25,8 +25,8 @@ body {
     /* background-color: green; */
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 339px;
-    max-width: 339px;
+    flex-grow: 1;
+    max-width: 70vh;
     max-height: 100vh;
     min-height: 100vh;
     position: relative;
@@ -76,7 +76,8 @@ p a:visited {
 /* right side area styles */
 .main {
     background-color: rgb(246, 246, 248);
-    width: 100%;
+    width: 30vh;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
