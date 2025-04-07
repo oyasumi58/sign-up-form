@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: Helvetica ,monospace, Courier, sans-serif;
+    font-family: 'Roboto', Helvetica ,monospace, Courier, sans-serif;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -136,7 +136,7 @@ div.input {
 input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
-    padding: 10px 20px 10px;
+    padding: 5px 20px 5px;
     padding-left: 3px;
     font-size: 1.2rem;
 }
