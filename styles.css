@@ -102,6 +102,7 @@ p a:visited {
     background: white;
     box-shadow: 0px 6px 8px 0px rgba(184, 184, 184, 0.84);
     margin-top: 30px;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -118,7 +119,7 @@ li {
     display: flex;
     color: rgb(83, 83, 83);
     font-size: 0.8rem;
-    margin-left: 30px;
+    margin-left: 20px;
     /* border: 1px solid red; */
 }
 
@@ -127,14 +128,17 @@ li + li {
 }
 
 div.input {
-
-    width: 240px;
+    margin-left: 10px;
+    width: 20rem;
     padding-right: 0px;
 }
 
 input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
+    padding: 10px 20px 10px;
+    padding-left: 3px;
+    font-size: 1.2rem;
 }
 
 input:hover {
